@@ -53,22 +53,6 @@ spec:
           default: couchbase   # /opt/couchbase/var/lib/couchbase
           data:  couchbase     # /mnt/data
           index: couchbase     # /mnt/index
-    - size: 1
-      name: index
-      services:
-        - index
-      pod:
-        volumeMounts:
-          default: couchbase   # /opt/couchbase/var/lib/couchbase
-          index: couchbase     # /mnt/index
-    - size: 1
-      name: search
-      services:
-        - query
-        - search
-      pod:
-        volumeMounts:
-          default: couchbase
   securityContext:
     fsGroup: 1000
   volumeClaimTemplates:

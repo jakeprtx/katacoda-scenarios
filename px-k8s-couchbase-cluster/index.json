@@ -1,8 +1,8 @@
 {
     "pathwayTitle": "Kubernetes",
     "icon": "fa-kubernetes",
-    "title": "Resize Kubernetes volumes using kubectl",
-    "description": "Using Kubernetes cli kubectl to resize a volume on the fly.",
+    "title": "Couchbase with Portworx Persistent Volumes",
+    "description": "Using Portworx persistent volmes with Couchbase.",
     "difficulty": "Intermediate",
     "details": {
         "steps": [
@@ -11,22 +11,9 @@
                 "text": "1.wait-k8s-px.md"
             },
             {
-                "title" : "Create volume for PostgreSQL",
+                "title" : "Create volume for Couchbase",
                 "courseData": "background.sh",
-                "text": "2.px-postgres-vol.md"
-            },
-            {
-                "title" : "Deploy postgres",
-                "text": "3.postgres-app.md"
-            },
-            {
-                "title" : "Inspect the volume",
-                "text": "4.px-vol-inspect.md"
-            },
-            {
-                "title" : "Create postgres database and expand the volume",
-                "text": "5.expand-volume.md",
-                "verify": "5.verify.sh"
+                "text": "2.couchbase-operator.md"
             }
         ],
         "intro": {
